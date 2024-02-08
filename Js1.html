@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script src="js1.js"></script>
+    <script>
+        function msg1(){
+            alert("Hello,hope you are doing well!");
+        }
+        function msg2(){
+            alert("Lets go to Manali");
+        }
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        document.write ("This is java script");
+        document.getElementById("demo").innerHTML="Hello";
+    </script>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById("demo1").innerHTML="Good night";
+    </script>
+    
+    <input type="button" value="Internal" onclick="msg1()">
+    <input type="button" value="External" onclick="msg2()">
+    <input type="button" value="Click me" onclick="msg3()">
+
+    <script>
+        alert("India!! India!!.....");
+    </script>
+    <script>
+        window.print();
+    </script>
+</body>
+</html>

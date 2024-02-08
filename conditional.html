@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        width: 100px;
+        background-color:beige;
+    }
+    button:hover{
+        background-color: burlywood;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+</style>
+<body>
+    <p>Find the Greatest of three numbers</p>
+    <button onclick="ifs()">Click me</button>
+</body>
+<script>
+    function ifs(){
+        let a = prompt("Enter num 1: ");
+        let b = prompt("Enter num 2: ");
+        let c = prompt("Enter num 3: ");
+        
+        if(a>b && a>c){
+            console.log("a is greater");
+            document.getElementById("ifs1").innerHTML=("a is greater");
+        }
+        else if(b>a && b>c){
+            console.log("b is greater");
+            document.getElementById("ifs1").innerHTML=("b is greater");
+        }
+        else{
+            console.log("c is greater");
+            document.getElementById("ifs1").innerHTML=("c is greater");
+        }
+    } 
+</script>
+</html>

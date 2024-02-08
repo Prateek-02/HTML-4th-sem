@@ -1,0 +1,12 @@
+Heading - Name(center)
+Add your - img(center)
+Background color - light green
+About you - with 10px margin left and right(dark green)
+Hobbies - Using list
+Table - Education
+
+
+Var --> We can reassign the value
+let and const --> We cannot reassign the value
+
+if we start with string and concatenate then all the next items will be concatenate in string

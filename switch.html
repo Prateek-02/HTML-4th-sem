@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let marks = prompt("Enter the marks: ");
+        marks = parseInt(marks);
+        switch(marks){
+            case 90:
+            console.log("A");
+            // OR
+            document.getElementById("demo").innerHTML="A";
+            break;
+            case 80:
+            console.log("B");
+            // OR
+            document.getElementById("demo").innerHTML="B";
+            break;
+            case 70:
+            consol.log("C");
+            // OR
+            document.getElementById("demo").innerHTML="C";
+            break;
+            case 60:
+            console.log("D"); 
+            // OR
+            document.getElementById("demo").innerHTML="D";
+            break;
+            case 50:
+            console.log("E");
+            // OR
+            document.getElementById("demo").innerHTML="E";
+            break;
+            default:
+            console.log("Fail");
+            // OR
+            document.getElementById("demo").innerHTML="Fail";
+            break;
+        }
+    </script>
+</body>
+</html>

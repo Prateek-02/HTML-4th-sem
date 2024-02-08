@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<!-- <style>
+    body{
+        background-color: bisque;
+        text-align: center;
+    }
+    p{
+        color: blue;
+    }
+</style> -->
+<body>
+    <form action="#" method="" target="" class="f">
+        <fieldset>
+        <legend align="center">User details</legend>
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname" max="20">
+        <br><br>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname">
+        <p><strong>Note: </strong>The default max character is 20.</p>
+
+        <label for="age">Enter your age: </label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <label for="gender">Select your gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="gender" name="gender">
+        <br><br>
+
+        <label for="email">Enter you email: </label>
+        <input type="email" id="email" name="email" required placeholder="xyz@gmail.com">
+        <br><br>
+
+        <label for="pnumber">Enter your phone number: </label>
+        <input type="number" name="pnumber" id="pnumber">
+        <br><br>
+
+        <label for="file">Select your file:  </label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <label for="url">Enter you website URL: </label>
+        <input type="url" name="url" id="url" placeholder="https://xyz.com">
+        <br><br>
+
+        <label for="dob">Enter you DOB: </label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <label for="color">Select your favourite color: </label>
+        <input type="color" name="color" id="color">
+        <br><br>
+
+        <label for="time period">Enter your start and end date of your teaching profession in previous institute: </label>
+        <br>
+        <p>Start date: </p>
+        <input type="date" name="time" id="time">
+        <br>
+        <p>End date: </p>
+        <input type="date" name="time2" id="time2">
+        <br><br>
+        <p>Select your meeting schedule: </p>
+        <p>Select date and time:
+        <input type="datetime-local" name="" id=""></p>
+        
+        <p>Select your favourite sports:</p>
+        <input type="checkbox" name="sp1" value="cricket">Cricket<br>
+        <input type="checkbox" name="sp2" value="football">football<br>
+        <input type="checkbox" name="sp3" value="badminton">Badminton<br>
+        <input type="checkbox" name="sp4" value="tennis">Tennis<br><br>
+        
+        <p>Select your country: 
+        <select name="country" id="register_country">
+            <option value="india">India</option>
+            <option value="aus">Australia</option>
+            <option value="eng">England</option>
+            <option value="newz">Newzealand</option>
+        </p>    
+        </select>
+        <p>Enter your Address:</p>
+        <textarea></textarea>
+        <br><br>
+        
+        <input type="button" value="Submit" id="b">
+    
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    margin: 10%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 249, 249);
+}
+form{
+    background-color: rgb(132, 234, 200);
+}
+#b:hover{
+    color:black;
+    box-shadow: 0 4px 8px 0;
+    border-radius: 10px;
+}
+input{
+    background-color:azure
+}
+.f{
+    align-items: center;
+}
+
