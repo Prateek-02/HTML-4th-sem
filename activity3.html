@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Division of Two numbers</h1>
+    <input type="number"  id="num1" placeholder="Enter num1">
+    <input type="number"  id="num2" placeholder="Enter num2">
+    <button onclick="div()">Click to start</button>
+    <p id="demo"></p>
+    <script>
+        function div(){
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        if (isNaN(num1) || isNaN(num2) || num1 === null || num2 === null) {
+            document.write("Both numbers must be valid and not null.");
+        }
+        if (num2 == 0) {
+            document.write("Error: Division by zero.");
+        }
+        else{
+            var quotient = parseFloat(num1/num2);
+        }
+        document.getElementById('demo').innerHTML = "The quotient is: "+quotient;
+        }
+    </script>
+</body>
+</html>

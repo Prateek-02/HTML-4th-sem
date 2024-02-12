@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse events</title>
+</head>
+<body>
+    <h1>Mouse events</h1>
+    <button id="a" onclick = fun()>Click me</button>
+    <button id="b" onmouseout=gun()>Click me</button>
+    <button id="c" onmouseover=sun()>Click me</button>
+    <script>
+        function fun(){
+            document.getElementById("a").style.color="green";
+        }
+        function gun(){
+            document.getElementById("b").style.background="Red";
+        }
+        function sun(){
+            document.getElementById("c").style.color="blue";
+        }
+    </script>
+    <h2>Keyboard events</h2>
+    <input type="text" id="e" onkeyup=abc()>
+    <input type="text" id="e" onkeydown=def()>
+    <script>
+        function abc(){
+            alert("Some key is pressed");
+        }
+        function def(){
+            alert("happy");
+        }
+    </script>
+
+</body>
+</html>

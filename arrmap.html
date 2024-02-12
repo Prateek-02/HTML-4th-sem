@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arr_map</title>
+</head>
+<body>
+    <script>
+        /*
+        let arr = [1,2,3,4];
+        document.write("Length of array is: "+arr.length+"<br>");
+        arr.map(el=>{
+            document.write(el*2+" ");
+        });
+        */
+
+        const person={
+            fname : "Prateek",
+            lname : "Raj",
+            get res(){
+                return this.fname;
+            },
+            set res(value){
+                this.fname = value;
+            }
+        };
+        document.write(person.res+" ");
+        document.write(person.lname)
+        document.write("<br>")
+        person.res="Namaste";
+        document.write(person.res);
+        
+
+
+    </script>
+</body>
+</html>
