@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="intro">Hello how are you?</p>
+    
+    <script>
+        //document.getElementById("demo").innerHTML="Hello World";
+        // document.getElementById("demo").innerText="Namaste Duniya";
+        //document.getElementsByTagName("p")[0].innerHTML="Namaste";
+        //const a = document.getElementsByTagName("p")[1].innerText;
+        //document.getElementById("intro").innerHTML= a + "- it asks you a question";   
+
+        const a = document.getElementsByTagName("p");
+        for(let i=0;i<a.length;i++){
+            document.write(a[i].innerHTML);
+        }
+        
+    </script>
+    <img src="./Assets/images/adiyogi.jpg" alt="">
+    <script>
+        document.querySelector("img").setAttribute("src","./Assets/images/nike shoe.jpg");
+    </script>
+        
+</body>
+</html>
