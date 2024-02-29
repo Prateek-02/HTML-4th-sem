@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <p id="demo">?????</p>
+    <p class="a">@@@@@</p>
+    <p class="b">!!!!!</p>
+    <button id="btn1">Decode ?????</button>
+    <button id="btn2">Decode @@@@@</button>
+    <button id="btn3">Decode !!!!!</button>
+    <script>
+        //$("p").hover(function(){
+        //    $(this).css("color","red");
+        //    $(this).css("font-size","30px");
+        //});
+
+        $(document).ready(function(){
+            $("p").css("color","blue");
+            $("p").css("font-weight","bold");
+            $("p").css("font-size","30px");
+            $(".a").css("color","red");
+            $(".a").css("font-size","40px");
+            $(".b").css("color","green");
+            $(".b").css("font-size","30px");
+
+            $("#btn1").click(function(){
+                $("#demo").text("Lovely Professional University")
+            })
+            $("#btn2").click(function(){
+                $(".a").text("India")
+                $(".a").css("font-style","italic");
+            })
+            $("#btn3").click(function(){
+                $(".b").text("Welcome");
+                $(".b").css("background-color","yellow");
+            })
+
+        })
+    </script>
+</body>
+</html>
