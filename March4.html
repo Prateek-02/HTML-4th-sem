@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <p id="inp">Click "ADD" to add image</p>
+    <br>
+    <button id="btn1">Add</button>
+    <button id="btn2">Remove</button>
+    <h1>LPU</h1>
+    <p id="inp2">Hey There</p>
+    <br>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#inp").html("<img src = './Assets/images/environment.jpeg'>")
+        })
+
+        $("#btn2").click(function(){
+            $("#inp").html("Image removed")
+        })
+
+        $("#btn3").click(function(){
+            $("#inp2").prepend("Namaste ");
+        })
+
+        $("#btn4").click(function(){
+            $("#inp2").append(" How are you?");
+        })
+
+    });
+    </script>
+</body>
+</html>
