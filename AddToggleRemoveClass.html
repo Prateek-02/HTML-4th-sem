@@ -7,11 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <style>
         .highlight{
-            background-color: yellow;
+            background-color: rgb(221, 221, 94);
         }
     </style>
 </head>
 <body>
+    <h2>List Items</h2>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -27,7 +28,7 @@
                 $("li:odd").addClass("highlight");
             })
             $("#btn2").click(function(){
-                $("li:even").addClass("highlight");
+                $("li:even").toggleClass("highlight");
             })
             $("#btn3").click(function(){
                 $("li").removeClass("highlight");

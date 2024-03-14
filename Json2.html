@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var stud,a="",i;
+        stud = {
+            "Name":"Ravi",
+            "cgpa":10,
+            "courses":["HTML","CSS","JS"]
+        };
+
+        for(i in stud.courses){
+            a += stud.courses[i]+"<br>";
+        }
+        document.getElementById("demo").innerHTML = a;
+        document.write("Name of the Student: "+stud.Name+"<br>");
+
+        const person = {
+            "name":"Ravi",
+            "age":20,
+            "city":"bhagalpur",
+            "email":"Raviroy@gmail.com",
+            "isEmploye":false,
+            "language":["English","Hindi"],
+            "address":{
+                "street":"Zero Mile",
+                "city":"Bhagalpur",
+                "Zipcoode":"813210"
+            }
+        }
+        document.write("Address of Student: ")
+        for(i in person.address){
+            document.write(person.address[i]+" ");
+        }
+    </script>
+</body>
+</html>
